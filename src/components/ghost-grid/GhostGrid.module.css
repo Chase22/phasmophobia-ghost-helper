@@ -2,10 +2,6 @@
     background: lightgray;
 }
 
-.Cell-True {
-    background: green;
-}
-
-.Cell-False {
-    background: red;
+.TableRowInactive {
+    background: lightgray;
 }

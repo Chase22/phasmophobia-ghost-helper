@@ -14,8 +14,7 @@ export interface MultiStateButtonProps {
 
 export default function MultiStateButton(props: MultiStateButtonProps) {
     return (
-        <Button onClick={props.onClick}>
-            {console.log(props.currentState)}
+        <Button size="large" onClick={props.onClick}>
             {props.states[props.currentState].content}
         </Button>
     )
