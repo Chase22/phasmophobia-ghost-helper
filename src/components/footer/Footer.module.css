@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.footerLink {
+    margin: 5px;
+}
