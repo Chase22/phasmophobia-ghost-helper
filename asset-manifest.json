@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/phasmophobia-ghost-helper/static/css/main.875def7b.chunk.css",
-    "main.js": "/phasmophobia-ghost-helper/static/js/main.57f53317.chunk.js",
-    "main.js.map": "/phasmophobia-ghost-helper/static/js/main.57f53317.chunk.js.map",
+    "main.js": "/phasmophobia-ghost-helper/static/js/main.266a925e.chunk.js",
+    "main.js.map": "/phasmophobia-ghost-helper/static/js/main.266a925e.chunk.js.map",
     "runtime-main.js": "/phasmophobia-ghost-helper/static/js/runtime-main.4131d2dd.js",
     "runtime-main.js.map": "/phasmophobia-ghost-helper/static/js/runtime-main.4131d2dd.js.map",
     "static/js/2.be874d98.chunk.js": "/phasmophobia-ghost-helper/static/js/2.be874d98.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4131d2dd.js",
     "static/js/2.be874d98.chunk.js",
     "static/css/main.875def7b.chunk.css",
-    "static/js/main.57f53317.chunk.js"
+    "static/js/main.266a925e.chunk.js"
   ]
 }
