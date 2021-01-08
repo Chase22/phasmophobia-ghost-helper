@@ -53,8 +53,9 @@ export default function GhostGrid() {
                         <TableCell align="center"><Button color="primary" onClick={() => setEvidenceStates(defaultState)}>Reset</Button></TableCell>
                         {evidences.map(value => (
                             <TableCell align="center">
-                                {value.toString().replaceAll("_", " ")}
+                                {value.replaceAll("_", " ")}
                                 <MultiStateButton
+                                    aria-label={value.replaceAll("_", " ")}
                                     currentState={evidenceStates[value]}
                                     states={buttonStates}
                                     onClick={() => setEvidenceStates(prevState => {
