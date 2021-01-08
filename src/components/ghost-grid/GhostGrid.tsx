@@ -51,7 +51,10 @@ export default function GhostGrid() {
                 <TableHead className={classes.Header}>
                     <TableRow>
                         <TableCell align="center">
-                            <Button color="primary" onClick={() => setEvidenceStates(defaultState)}>Reset</Button>
+                            <Button color="secondary"
+                                    size="large"
+                                    variant="outlined"
+                                    onClick={() => setEvidenceStates(defaultState)}>Reset</Button>
                         </TableCell>
                         {evidences.map(value => (
                             <TableCell align="center">
