@@ -101,7 +101,6 @@ export default function GhostGrid(props: GhostGridProps) {
 
 function GhostRow(ghost: Ghost & { active: boolean }): JSX.Element {
     const className = ghost.active ? "" : styles.TableRowInactive
-    console.log(className)
     return (
         <TableRow className={`${className}`}>
             <TableCell align="center">{ghost.name}</TableCell>
