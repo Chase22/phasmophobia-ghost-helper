@@ -50,22 +50,26 @@ export default function GhostGrid() {
             <Table>
                 <TableHead className={classes.Header}>
                     <TableRow>
-                        <TableCell align="center"><Button color="primary" onClick={() => setEvidenceStates(defaultState)}>Reset</Button></TableCell>
+                        <TableCell align="center">
+                            <Button color="primary" onClick={() => setEvidenceStates(defaultState)}>Reset</Button>
+                        </TableCell>
                         {evidences.map(value => (
                             <TableCell align="center">
-                                {value.replaceAll("_", " ")}
-                                <MultiStateButton
-                                    aria-label={value.replaceAll("_", " ")}
-                                    currentState={evidenceStates[value]}
-                                    states={buttonStates}
-                                    onClick={() => setEvidenceStates(prevState => {
-                                        prevState[value] = prevState[value] + 1
-                                        if (prevState[value] >= buttonStates.length) {
-                                            prevState[value] = 0
-                                        }
-                                        return {...prevState}
-                                    })}
-                                />
+                                <div className={classes.EvidenceHeaderCell}>
+                                    {value.replaceAll("_", " ")}
+                                    <MultiStateButton
+                                        aria-label={value.replaceAll("_", " ")}
+                                        currentState={evidenceStates[value]}
+                                        states={buttonStates}
+                                        onClick={() => setEvidenceStates(prevState => {
+                                            prevState[value] = prevState[value] + 1
+                                            if (prevState[value] >= buttonStates.length) {
+                                                prevState[value] = 0
+                                            }
+                                            return {...prevState}
+                                        })}
+                                    />
+                                </div>
                             </TableCell>
                         ))}
                     </TableRow>
@@ -73,7 +77,7 @@ export default function GhostGrid() {
                 <TableBody>
                     {renderedGhost
                         .sort((a, b) => a.name.localeCompare(b.name))
-                        .sort((a, b) => (a.active === b.active)? 0 : a.active? -1 : 1)
+                        .sort((a, b) => (a.active === b.active) ? 0 : a.active ? -1 : 1)
                         .map(ghost => GhostRow(ghost))
                     }
                 </TableBody>

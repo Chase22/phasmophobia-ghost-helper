@@ -5,3 +5,8 @@
 .TableRowInactive {
     background: lightgray;
 }
+
+.EvidenceHeaderCell {
+    display: flex;
+    flex-direction: column;
+}
