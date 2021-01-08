@@ -1,10 +1,11 @@
-import {Button, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
+import {Button, IconButton, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
 import React, {useState} from "react";
 import ghosts, {Ghost} from "../../data/Ghost";
 import classes from './GhostGrid.module.css';
 import MultiStateButton, {MultiStateButtonState} from "../tristate-button/MultiStateButton";
 import CheckIcon from '@material-ui/icons/Check';
-import CloseIcon from '@material-ui/icons/Close'
+import CloseIcon from '@material-ui/icons/Close';
+import HelpIcon from '@material-ui/icons/Help';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import {Evidence, evidences} from "../../data/Evidence";
 
@@ -19,7 +20,13 @@ type GhostGridState = {
     [key in Evidence]: number;
 };
 
-export default function GhostGrid() {
+interface GhostGridProps {
+    onHelpButton: () => void
+}
+
+export default function GhostGrid(props: GhostGridProps) {
+    const {onHelpButton} = props;
+
     const defaultState = {
         "GHOST_WRITING": 0,
         "SPIRIT_BOX": 0,
@@ -51,10 +58,13 @@ export default function GhostGrid() {
                 <TableHead className={classes.Header}>
                     <TableRow>
                         <TableCell align="center">
-                            <Button color="secondary"
-                                    size="large"
-                                    variant="outlined"
-                                    onClick={() => setEvidenceStates(defaultState)}>Reset</Button>
+                            <div className={classes.ButtonCell}>
+                                <IconButton onClick={onHelpButton}><HelpIcon/></IconButton>
+                                <Button color="secondary"
+                                        size="large"
+                                        variant="outlined"
+                                        onClick={() => setEvidenceStates(defaultState)}>Reset</Button>
+                            </div>
                         </TableCell>
                         {evidences.map(value => (
                             <TableCell align="center">

@@ -10,3 +10,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.ButtonCell {
+    display: flex;
+    justify-content: space-around;
+}
