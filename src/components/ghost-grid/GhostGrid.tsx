@@ -1,14 +1,13 @@
 import {Button, IconButton, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
 import React, {useState} from "react";
 import ghosts, {Ghost} from "../../data/Ghost";
-import classes from './GhostGrid.module.css';
-import MultiStateButton, {MultiStateButtonState} from "../tristate-button/MultiStateButton";
+import styles from './GhostGrid.module.css';
+import MultiStateButton, {MultiStateButtonState} from "../multistate-button/MultiStateButton";
 import CheckIcon from '@material-ui/icons/Check';
 import CloseIcon from '@material-ui/icons/Close';
 import HelpIcon from '@material-ui/icons/Help';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import {Evidence, evidences} from "../../data/Evidence";
-
 
 const buttonStates: Array<MultiStateButtonState> = [
     {key: "unknown", content: <RadioButtonUncheckedIcon/>},
@@ -55,10 +54,10 @@ export default function GhostGrid(props: GhostGridProps) {
     return (
         <>
             <Table>
-                <TableHead className={classes.Header}>
+                <TableHead className={styles.Header}>
                     <TableRow>
                         <TableCell align="center">
-                            <div className={classes.ButtonCell}>
+                            <div className={styles.ButtonCell}>
                                 <IconButton onClick={onHelpButton}><HelpIcon/></IconButton>
                                 <Button color="secondary"
                                         size="large"
@@ -68,7 +67,7 @@ export default function GhostGrid(props: GhostGridProps) {
                         </TableCell>
                         {evidences.map(value => (
                             <TableCell align="center">
-                                <div className={classes.EvidenceHeaderCell}>
+                                <div className={styles.EvidenceHeaderCell}>
                                     {value.replaceAll("_", " ")}
                                     <MultiStateButton
                                         aria-label={value.replaceAll("_", " ")}
@@ -101,7 +100,7 @@ export default function GhostGrid(props: GhostGridProps) {
 
 
 function GhostRow(ghost: Ghost & { active: boolean }): JSX.Element {
-    const className = ghost.active ? "" : classes.TableRowInactive
+    const className = ghost.active ? "" : styles.TableRowInactive
     console.log(className)
     return (
         <TableRow className={`${className}`}>
