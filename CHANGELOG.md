@@ -16,5 +16,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Everything
 
-[Unreleased]: https://github.com/Chase22/phasmophobia-ghost-helper/compare/v1.0...HEAD
+[Unreleased]: https://github.com/Chase22/phasmophobia-ghost-helper/compare/v1.0...dev
 [1.0.0]: https://github.com/Chase22/phasmophobia-ghost-helper/releases/tag/v1.0
