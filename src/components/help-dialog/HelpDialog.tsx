@@ -1,4 +1,4 @@
-import {Dialog, IconButton, Table, TableCell, TableHead, TableRow} from "@material-ui/core";
+import {Dialog, IconButton, Table, TableCell, TableRow} from "@material-ui/core";
 import React from "react";
 import styles from "./HelpDialog.module.css";
 import CheckIcon from '@material-ui/icons/Check';
