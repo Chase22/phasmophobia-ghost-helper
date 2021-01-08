@@ -1,4 +1,5 @@
 # Phasmophobia Ghost Helper
+![Deployment](https://github.com/Chase22/phasmophobia-ghost-helper/workflows/Deployment/badge.svg)
 This website lets you identify ghosts in the Video Game Phasmophobia by Including or excluding different Evidence
 
 Hosted at: https://chase22.github.io/phasmophobia-ghost-helper
