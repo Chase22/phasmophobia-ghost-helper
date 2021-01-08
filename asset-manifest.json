@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/phasmophobia-ghost-helper/static/css/main.875def7b.chunk.css",
-    "main.js": "/phasmophobia-ghost-helper/static/js/main.266a925e.chunk.js",
-    "main.js.map": "/phasmophobia-ghost-helper/static/js/main.266a925e.chunk.js.map",
-    "runtime-main.js": "/phasmophobia-ghost-helper/static/js/runtime-main.4131d2dd.js",
-    "runtime-main.js.map": "/phasmophobia-ghost-helper/static/js/runtime-main.4131d2dd.js.map",
-    "static/js/2.be874d98.chunk.js": "/phasmophobia-ghost-helper/static/js/2.be874d98.chunk.js",
-    "static/js/2.be874d98.chunk.js.map": "/phasmophobia-ghost-helper/static/js/2.be874d98.chunk.js.map",
-    "static/js/3.9e1aaa4c.chunk.js": "/phasmophobia-ghost-helper/static/js/3.9e1aaa4c.chunk.js",
-    "static/js/3.9e1aaa4c.chunk.js.map": "/phasmophobia-ghost-helper/static/js/3.9e1aaa4c.chunk.js.map",
+    "main.css": "/phasmophobia-ghost-helper/static/css/main.4a1667ab.chunk.css",
+    "main.js": "/phasmophobia-ghost-helper/static/js/main.710b03da.chunk.js",
+    "main.js.map": "/phasmophobia-ghost-helper/static/js/main.710b03da.chunk.js.map",
+    "runtime-main.js": "/phasmophobia-ghost-helper/static/js/runtime-main.9d06a02d.js",
+    "runtime-main.js.map": "/phasmophobia-ghost-helper/static/js/runtime-main.9d06a02d.js.map",
+    "static/js/2.98f8cf7e.chunk.js": "/phasmophobia-ghost-helper/static/js/2.98f8cf7e.chunk.js",
+    "static/js/2.98f8cf7e.chunk.js.map": "/phasmophobia-ghost-helper/static/js/2.98f8cf7e.chunk.js.map",
+    "static/js/3.0a7ba5ed.chunk.js": "/phasmophobia-ghost-helper/static/js/3.0a7ba5ed.chunk.js",
+    "static/js/3.0a7ba5ed.chunk.js.map": "/phasmophobia-ghost-helper/static/js/3.0a7ba5ed.chunk.js.map",
     "index.html": "/phasmophobia-ghost-helper/index.html",
-    "static/css/main.875def7b.chunk.css.map": "/phasmophobia-ghost-helper/static/css/main.875def7b.chunk.css.map",
-    "static/js/2.be874d98.chunk.js.LICENSE.txt": "/phasmophobia-ghost-helper/static/js/2.be874d98.chunk.js.LICENSE.txt"
+    "static/css/main.4a1667ab.chunk.css.map": "/phasmophobia-ghost-helper/static/css/main.4a1667ab.chunk.css.map",
+    "static/js/2.98f8cf7e.chunk.js.LICENSE.txt": "/phasmophobia-ghost-helper/static/js/2.98f8cf7e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4131d2dd.js",
-    "static/js/2.be874d98.chunk.js",
-    "static/css/main.875def7b.chunk.css",
-    "static/js/main.266a925e.chunk.js"
+    "static/js/runtime-main.9d06a02d.js",
+    "static/js/2.98f8cf7e.chunk.js",
+    "static/css/main.4a1667ab.chunk.css",
+    "static/js/main.710b03da.chunk.js"
   ]
 }
