@@ -1,11 +1,10 @@
-import {Button, IconButton, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
+import {Button, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
 import React, {useState} from "react";
 import ghosts, {Ghost} from "../../data/Ghost";
 import styles from './GhostGrid.module.css';
 import MultiStateButton, {MultiStateButtonState} from "../multistate-button/MultiStateButton";
 import CheckIcon from '@material-ui/icons/Check';
 import CloseIcon from '@material-ui/icons/Close';
-import HelpIcon from '@material-ui/icons/Help';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import {Evidence, evidences} from "../../data/Evidence";
 
@@ -19,12 +18,8 @@ type GhostGridState = {
     [key in Evidence]: number;
 };
 
-interface GhostGridProps {
-    onHelpButton: () => void
-}
 
-export default function GhostGrid(props: GhostGridProps) {
-    const {onHelpButton} = props;
+export default function GhostGrid() {
 
     const defaultState = {
         "GHOST_WRITING": 0,
@@ -58,7 +53,6 @@ export default function GhostGrid(props: GhostGridProps) {
                     <TableRow>
                         <TableCell align="center">
                             <div className={styles.ButtonCell}>
-                                <IconButton onClick={onHelpButton}><HelpIcon/></IconButton>
                                 <Button color="secondary"
                                         size="large"
                                         variant="outlined"

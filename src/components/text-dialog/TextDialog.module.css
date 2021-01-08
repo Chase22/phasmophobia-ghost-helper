@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.content {
+    margin: 10px;
+}
+
+.contentCenter {
+    text-align: center;
+}
