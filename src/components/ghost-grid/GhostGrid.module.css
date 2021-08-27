@@ -6,6 +6,11 @@
     background: lightgray;
 }
 
+.GhostCell {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .EvidenceHeaderCell {
     display: flex;
     flex-direction: column;

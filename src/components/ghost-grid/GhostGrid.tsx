@@ -26,13 +26,14 @@ interface GhostGridProps {
 export default function GhostGrid(props: GhostGridProps) {
     const {onHelpButton} = props;
 
-    const defaultState = {
+    const defaultState: GhostGridState = {
         "GHOST_WRITING": 0,
         "SPIRIT_BOX": 0,
         "FREEZING_TEMPERATURE": 0,
         "GHOST_ORB": 0,
         "FINGERPRINTS": 0,
         "EMF_LEVEL_5": 0,
+        "D.O.T.S_PROJECTOR": 0
     };
     const [evidenceStates, setEvidenceStates] = useState<GhostGridState>(defaultState)
 
@@ -103,9 +104,9 @@ function GhostRow(ghost: Ghost & { active: boolean }): JSX.Element {
     const className = ghost.active ? "" : styles.TableRowInactive
     return (
         <TableRow className={`${className}`}>
-            <TableCell align="center">{ghost.name}</TableCell>
+            <TableCell align="center" classes={{root: styles.GhostCell}}>{ghost.name}</TableCell>
             {evidences.map(value =>
-                <TableCell align="center">
+                <TableCell align="center" classes={{root: styles.GhostCell}}>
                     {ghost.evidence.includes(value) ? "X" : ""}
                 </TableCell>)}
         </TableRow>
